@@ -1,0 +1,262 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container for sidebar and main content */
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #2d2d66;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Ensures sidebar takes full height */
+}
+
+/* Sidebar list styling */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Sidebar list items */
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+/* Sidebar links */
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Sidebar icon */
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Sidebar hover and active state */
+.sidebar ul li a:hover,
+.sidebar ul li.active a {
+    background-color: #4e4e93;
+    border-radius: 5px;
+}
+
+/* Main content styling */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar left section (Logo and title) */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar logo */
+.logo-navbar {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+/* Navbar title */
+.navbar-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4e4e93;
+}
+
+/* Navbar right section (Icons and Dropdown) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown button */
+.dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    border: none;
+    color: #4e4e93;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+/* Dropdown icon */
+.dropdown-btn i {
+    margin-left: 5px;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 5px;
+}
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dropdown link styling */
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Dropdown link hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Navbar icons styling */
+.navbar-icons i {
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* User avatar styling */
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Form container styling */
+.form-container {
+    margin-top: 20px;
+}
+
+/* Form card styling */
+.form-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Card title styling */
+h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form section styling */
+.course-form .form-section {
+    margin-bottom: 25px;
+}
+
+/* Form label styling */
+.course-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+/* Input and textarea styling */
+.course-form input,
+.course-form textarea,
+.course-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Textarea height adjustment */
+.course-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Input, textarea, and select focus state */
+.course-form input:focus,
+.course-form textarea:focus,
+.course-form select:focus {
+    outline: none;
+    border-color: #4e4e93;
+}
+
+/* Form actions (submit button) styling */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Prev and Next button styling */
+.form-actions button {
+    background-color: #4e4e93;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Prev button styling */
+.prev-btn {
+    background-color: #ddd;
+}
+
+.form-actions button:hover {
+    background-color: #3a3a7e;
+}

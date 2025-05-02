@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="logo.png" alt="Logo" class="logo-navbar">
+            <span class="navbar-title">Educart</span>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="dropdown-btn">All Pages <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Dashboard</a>
+                    <a href="#">My Courses</a>
+                    <a href="#">Bookmarks</a>
+                    <a href="#">Messages</a>
+                    <a href="#">Create Course</a>
+                </div>
+            </div>
+            <div class="navbar-icons">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-expand"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-bell"></i>
+                <img src="user-avatar.jpg" alt="User Avatar" class="user-avatar">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> My Courses</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li class="active"><a href="#"><i class="fas fa-plus-circle"></i> Create Course</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Create Course Form -->
+            <div class="form-container">
+                <h1>Create New Course</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="form-card">
+                    <h3>Basic Information</h3>
+                    <form class="course-form">
+                        <div class="form-section">
+                            <label for="course-title">Course Title*</label>
+                            <input type="text" id="course-title" placeholder="Learn Figma - UI/UX Design Essential Training">
+                        </div>
+                        <div class="form-section">
+                            <label for="course-description">Short Description*</label>
+                            <textarea id="course-description" placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-section">
+                            <label for="course-learn">What will students learn in your course?*</label>
+                            <textarea id="course-learn" placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-section">
+                            <label for="course-requirements">Requirements*</label>
+                            <textarea id="course-requirements" placeholder="Description"></textarea>
+                        </div>
+                        <div class="form-section">
+                            <label for="course-level">Course Level*</label>
+                            <select id="course-level">
+                                <option value="">Select</option>
+                                <option value="beginner">Beginner</option>
+                                <option value="intermediate">Intermediate</option>
+                                <option value="advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="form-section">
+                            <label for="audio-language">Audio Language*</label>
+                            <select id="audio-language">
+                                <option value="">Select</option>
+                                <option value="english">English</option>
+                                <option value="spanish">Spanish</option>
+                                <option value="french">French</option>
+                            </select>
+                        </div>
+                        <div class="form-section">
+                            <label for="close-caption">Close Caption*</label>
+                            <select id="close-caption">
+                                <option value="">Select</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
+                        </div>
+                        <div class="form-section">
+                            <label for="course-category">Course Category*</label>
+                            <select id="course-category">
+                                <option value="">Select</option>
+                                <option value="design">Design</option>
+                                <option value="development">Development</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </div>
+
+                        <!-- Media Section -->
+                        <div class="form-card media-card">
+                            <h3>Media</h3>
+                            <div class="form-section">
+                                <label for="course-thumbnail">Course Thumbnail*</label>
+                                <div class="file-upload">
+                                    <input type="file" id="course-thumbnail" accept=".jpg, .jpeg, .png">
+                                    <span>Upload Files</span>
+                                </div>
+                                <p>Upload your course image here. It must meet our course image quality standards to be accepted. Important guidelines: 750x440 pixels; .jpg, .jpeg, .gif, or .png. No text on the image.</p>
+                            </div>
+
+                            <div class="form-section">
+                                <label for="video-url">Video URL*</label>
+                                <div class="file-upload">
+                                    <input type="file" id="video-url" accept=".mp4, .webm, .mp3">
+                                    <span>Upload Files</span>
+                                </div>
+                                <p>Enter a valid video URL. Students who watch a well-made promo video are 5X more likely to enroll in your course.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit">Next</button>
+                            <button type="button" class="prev-btn">Prev</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

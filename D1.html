@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create New Course</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navbar -->
-    <div class="navbar">
-        <div class="navbar-left">
-            <img src="logo.png" alt="Logo" class="logo-navbar">
-            <span class="navbar-title">Educart</span>
+   <!-- Navbar -->
+   <div class="navbar">
+    <div class="navbar-left">
+        <img src="logo.png" alt="Logo" class="logo-navbar">
+        <span class="navbar-title">Educart</span>
+    </div>
+    <div class="navbar-right">
+        <div class="dropdown">
+            <button class="dropdown-btn">All Pages <i class="fas fa-chevron-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Dashboard</a>
+                <a href="#">My Courses</a>
+                <a href="#">Bookmarks</a>
+                <a href="#">Messages</a>
+                <a href="#">Create Course</a>
+            </div>
         </div>
-        <div class="navbar-right">
-            <div class="dropdown">
-                <button class="dropdown-btn">All Pages <i class="fas fa-chevron-down"></i></button>
-                <div class="dropdown-content">
-                    <a href="#">Dashboard</a>
-                    <a href="#">My Courses</a>
-                    <a href="#">Bookmarks</a>
-                    <a href="#">Messages</a>
-                    <a href="#">Create Course</a>
-                </div>
-            </div>
-            <div class="navbar-icons">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-expand"></i>
-                <i class="fas fa-shopping-bag"></i>
-                <i class="fas fa-envelope"></i>
-                <i class="fas fa-bell"></i>
-                <img src="user-avatar.jpg" alt="User Avatar" class="user-avatar">
-            </div>
+        <div class="navbar-icons">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-expand"></i>
+            <i class="fas fa-shopping-bag"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-bell"></i>
+            <img src="user-avatar.jpg" alt="User Avatar" class="user-avatar">
         </div>
     </div>
+</div>
 
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <ul>
-                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="#"><i class="fas fa-book-open"></i> My Courses</a></li>
-                <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
-                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
-                <li class="active"><a href="#"><i class="fas fa-plus-circle"></i> Create Course</a></li>
-                <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
-                <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
-            </ul>
-        </div>
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+            <li><a href="#"><i class="fas fa-book-open"></i> My Courses</a></li>
+            <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+            <li class="active"><a href="#"><i class="fas fa-plus-circle"></i> Create Course</a></li>
+            <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+            <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+        </ul>
+    </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <!-- Create Course Form -->
-            <div class="form-container">
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Basic Info Section -->
+        <div class="section-card">
+             <!-- Basic Info Section -->
+            <div class="section-card">
                 <h1>Create New Course</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="form-card">
@@ -111,37 +116,89 @@
                                 <option value="marketing">Marketing</option>
                             </select>
                         </div>
-
-                        <!-- Media Section -->
-                        <div class="form-card media-card">
-                            <h3>Media</h3>
-                            <div class="form-section">
-                                <label for="course-thumbnail">Course Thumbnail*</label>
-                                <div class="file-upload">
-                                    <input type="file" id="course-thumbnail" accept=".jpg, .jpeg, .png">
-                                    <span>Upload Files</span>
-                                </div>
-                                <p>Upload your course image here. It must meet our course image quality standards to be accepted. Important guidelines: 750x440 pixels; .jpg, .jpeg, .gif, or .png. No text on the image.</p>
-                            </div>
-
-                            <div class="form-section">
-                                <label for="video-url">Video URL*</label>
-                                <div class="file-upload">
-                                    <input type="file" id="video-url" accept=".mp4, .webm, .mp3">
-                                    <span>Upload Files</span>
-                                </div>
-                                <p>Enter a valid video URL. Students who watch a well-made promo video are 5X more likely to enroll in your course.</p>
-                            </div>
-                        </div>
-
-                        <div class="form-actions">
-                            <button type="submit">Next</button>
-                            <button type="button" class="prev-btn">Prev</button>
-                        </div>
                     </form>
                 </div>
             </div>
         </div>
+
+        <!-- Curriculum Section -->
+        <div class="section-card curriculum-section">
+            <h3>Curriculum</h3>
+            <div class="curriculum-card">
+                <h4>Introduction to JavaScript</h4>
+                <div class="curriculum-item">
+                    <i class="fas fa-bars"></i> Introduction
+                    <span class="icons">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="curriculum-item">
+                    <i class="fas fa-bars"></i> Installing Development Software
+                    <span class="icons">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="curriculum-item">
+                    <i class="fas fa-bars"></i> Hello World Project from GitHub
+                    <span class="icons">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="curriculum-card">
+                <h4>Advanced JavaScript Concepts</h4>
+                <div class="curriculum-item">
+                    <i class="fas fa-bars"></i> Closures and Scope
+                    <span class="icons">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+                <div class="curriculum-item">
+                    <i class="fas fa-bars"></i> Promises and Async/Await
+                    <span class="icons">
+                        <i class="fas fa-pencil-alt"></i>
+                        <i class="fas fa-trash"></i>
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Media Section -->
+        <div class="section-card media-section">
+            <h3>Media</h3>
+            <div class="media-item">
+                <img src="Cover-1.png" alt="Thumbnail Preview" class="media-preview">
+                <div class="media-info">
+                    <label>Course thumbnail*</label>
+                    <input type="text" value="Cover-1.png" readonly>
+                    <button class="upload-btn">Upload Files</button>
+                    <p>Upload your course image here. Important guidelines: 750x440 pixels; .jpg, .jpeg, .gif, or .png. No text on the image.</p>
+                </div>
+            </div>
+            <div class="media-item">
+                <img src="Video-1-thumbnail.png" alt="Video Preview" class="media-preview">
+                <div class="media-info">
+                    <label>Video URL*</label>
+                    <div class="video-input-wrapper">
+                        <input type="text" value="Video-1.mp3" readonly>
+                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                    <button class="upload-btn">Upload Files</button>
+                    <p>Enter a valid video URL. Students who watch a well-made promo video are 5X more likely to enroll.</p>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
 </body>
+
 </html>

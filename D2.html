@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="logo.png" alt="Logo" class="logo-navbar">
+            <span class="navbar-title">Educart</span>
+        </div>
+        <div class="navbar-right">
+            <div class="dropdown">
+                <button class="dropdown-btn">All Pages <i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown-content">
+                    <a href="#">Dashboard</a>
+                    <a href="#">My Courses</a>
+                    <a href="#">Bookmarks</a>
+                    <a href="#">Messages</a>
+                    <a href="#">Create Course</a>
+                </div>
+            </div>
+            <div class="navbar-icons">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-expand"></i>
+                <i class="fas fa-shopping-bag"></i>
+                <i class="fas fa-envelope"></i>
+                <i class="fas fa-bell"></i>
+                <img src="user-avatar.jpg" alt="User Avatar" class="user-avatar">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#"><i class="fas fa-book-open"></i> My Courses</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li class="active"><a href="#"><i class="fas fa-plus-circle"></i> Create Course</a></li>
+                <li><a href="#"><i class="fas fa-star"></i> Reviews</a></li>
+                <li><a href="#"><i class="fas fa-cogs"></i> Settings</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="form-container">
+                <h1>Create New Course</h1>
+                <form method="POST" action="create_course.php">
+                    <div class="section-card">
+                        <h3>Highlight Description</h3>
+                        <div class="form-section">
+                            <label for="highlight-description">Write your highlight description of your module</label>
+                            <textarea id="highlight-description" name="highlight_description"
+                                placeholder="Enter a brief highlight of the course" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <h3>Topic</h3>
+                        <div class="form-section">
+                            <label for="topic">Select your topic(s)</label>
+                            <select id="topic" name="topic" required>
+                                <option value="">Select</option>
+                                <option value="design">Design</option>
+                                <option value="development">Development</option>
+                                <option value="marketing">Marketing</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <h3>Choose Module Prerequisites</h3>
+                        <div class="form-section">
+                            <label for="module-prerequisite">Your module can be accessed when the module below has been
+                                finished.</label>
+                            <input type="text" id="module-prerequisite" name="module_prerequisite"
+                                placeholder="Type module name or instructor" required>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <h3>Module Instructor</h3>
+                        <div class="form-section">
+                            <label for="module-instructor">Module Instructor</label>
+                            <select id="module-instructor" name="module_instructor" required>
+                                <option value="">Select Instructor</option>
+                                <option value="instructor1">Instructor 1</option>
+                                <option value="instructor2">Instructor 2</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="section-card">
+                        <h3>Module Settings</h3>
+                        <div class="form-section">
+                            <input type="checkbox" id="free-module" name="free_module">
+                            <label for="free-module">Set as Free Module (Free module can be accessed without subscribing
+                                to our package)</label>
+                        </div>
+                        <div class="form-section">
+                            <input type="checkbox" id="sequential-access" name="sequential_access">
+                            <label for="sequential-access">Set access to module sequentially (Subsequent lessons can be
+                                accessed when the current lesson has been finished)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
